@@ -1,0 +1,53 @@
+name: digikit_w_o
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter:
+    sdk: flutter
+  get_storage: ^2.1.1
+  flutter_screenutil: ^5.9.0
+  google_nav_bar: ^5.0.6
+  dio: ^5.4.0
+  dartz: ^0.10.1
+  google_fonts: ^6.1.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  image_path_android: "assets/logos/logo.png"
+  image_path_ios: "assets/logos/logo.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  # adaptive_icon_background: "assets/images/christmas-background.png" # only available for Android 8.0 devices and above
+  # adaptive_icon_foreground: "assets/images/icon-foreground-432x432.png" # only available for Android 8.0 devices and above
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  remove_alpha_ios: true
+  background_color_ios: "#ffffff"
+  web:
+    generate: true
+    image_path: "assets/logos/logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/logos/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logos/logo.png"
+
+dev_dependencies:
+  flutter_lints: 3.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/logos/
+  uses-material-design: true
